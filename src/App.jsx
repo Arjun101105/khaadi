@@ -30,7 +30,7 @@ const CountdownTimer = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${backgroundImage})`, // Apply the background image
-          backgroundSize: 'auto', // Keep the image in portrait
+          backgroundSize: 'contain', // Ensure the whole image is visible
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat', // Prevent image repetition
         }}
@@ -38,7 +38,7 @@ const CountdownTimer = () => {
 
       {/* Dark Semi-transparent Transparent Card with Correct Opacity */}
       <div
-        className="relative z-10 p-6 sm:p-8 rounded-lg shadow-lg"
+        className="absolute bottom-0 w-full p-6 sm:p-8 rounded-lg shadow-lg"
         style={{
           backgroundColor: "rgba(0, 0, 0, 0.6)", // Dark semi-transparent black card
         }}
@@ -51,7 +51,8 @@ const CountdownTimer = () => {
         <p className="text-lg sm:text-xl mb-6 text-center text-gray-400">
           Mark Your Calendars - 03/03/2025
         </p>
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xl sm:text-2xl md:text-3xl font-semibold">
+        {/* Adjusted Timer Sizes for Smaller Screens */}
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-lg sm:text-xl md:text-2xl font-semibold">
           <div className="flex items-center justify-center p-3 sm:p-4 bg-gray-800 rounded-lg w-16 sm:w-20 md:w-24 shadow-lg">
             {days}d
           </div>
