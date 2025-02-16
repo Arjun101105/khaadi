@@ -47,7 +47,7 @@ const CountdownTimer = () => {
         <h1 className="flex items-center justify-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center">
           <span className="mr-2"></span> Big Reveal Coming Soon! <span className="ml-2"></span>
         </h1>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">Khadi Clothing</h1>
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-center">Khadi India</h1>
         <p className="text-lg sm:text-xl mb-6 text-center text-gray-400">
           Mark Your Calendars - 03/03/2025
         </p>
